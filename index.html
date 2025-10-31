@@ -1,0 +1,105 @@
+<!DOCTYPE html>
+<html lang="en">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Countdown Timer</title>
+    <link rel="stylesheet" href="./style.css" />
+    <script defer src="./script.js"></script>
+  </head>
+  <body>
+    <div class="container">
+      <div class="header">
+        <h1>Countdown Timer</h1>
+      </div>
+      <div class="header-section">
+        <label>Select the theme:</label>
+        <div class="theme-selector">
+          <button
+            class="theme-btn default active"
+            data-theme="default"
+            title="Default Theme"
+          >
+            Default
+          </button>
+          <button class="theme-btn dark" data-theme="dark" title="Dark Theme">
+            Dark
+          </button>
+          <button
+            class="theme-btn sunset"
+            data-theme="sunset"
+            title="Sunset Theme"
+          >
+            Sunset
+          </button>
+        </div>
+      </div>
+
+      <!-- Alert Box -->
+      <div class="alert-box" id="alert-box">
+        <div class="alert-content">
+          <div class="alert-message">
+            <span class="alert-icon" id="alert-icon">⚠️</span>
+            <span id="alert-text">Alert message here</span>
+          </div>
+          <button
+            class="delete-timers"
+            id="alert-close"
+            aria-label="Close alert"
+          >
+            ×
+          </button>
+        </div>
+      </div>
+
+      <!-- Confirmation Modal -->
+      <div class="modal-overlay" id="modal-overlay">
+        <div class="modal-box">
+          <div class="modal-header">
+            <span class="modal-icon">⚠️</span>
+            <h2 class="modal-title">Clear All Timers?</h2>
+          </div>
+          <p class="modal-message">
+            Are you sure you want to delete all countdown timers? This action
+            cannot be undone.
+          </p>
+          <div class="modal-buttons">
+            <button class="modal-btn modal-btn-cancel" id="modal-cancel">
+              Cancel
+            </button>
+            <button class="modal-btn modal-btn-confirm" id="modal-confirm">
+              Clear All
+            </button>
+          </div>
+        </div>
+      </div>
+
+      <div class="input-section">
+        <div class="input-group">
+          <label for="timer-name">Timer Name (Optional):</label>
+          <input
+            type="text"
+            id="timer-name"
+            placeholder="e.g., Birthday Party, Project Deadline"
+          />
+        </div>
+        <div class="input-group">
+          <label for="target-datetime">Select Target Date and Time:</label>
+          <input type="datetime-local" id="target-datetime" required />
+        </div>
+
+        <div class="button-group">
+          <button class="start-btn" id="start-btn">Add Countdown</button>
+          <button class="reset-btn" id="reset-btn">Clear All</button>
+        </div>
+      </div>
+
+      <div class="timers-container" id="timers-container">
+        <div class="empty-state">
+          <div class="empty-state-icon">⏱️</div>
+          <div>No active countdowns.<br />Create your first timer above!</div>
+        </div>
+      </div>
+    </div>
+  </body>
+</html>
