@@ -13,3 +13,10 @@ A responsive and easy-to-use Countdown Timer web app built with **HTML**, **CSS*
 - HTML5  
 - CSS3  
 - JavaScript (ES6)
+
+## 💻 Preview
+<p align="center">
+  <img src="./Default.png" alt="Basic Countdown-Default Preview" width="600px">
+  <img src="./Dark.png" alt="Basic Countdown-Dark Preview" width="600px">
+  <img src="./Sunset.png" alt="Basic Countdown-Sunset Preview" width="600px">
+</p>

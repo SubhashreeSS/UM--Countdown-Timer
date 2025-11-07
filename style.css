@@ -54,7 +54,7 @@ body {
     var(--bg-gradient-end) 100%
   );
   min-height: 100vh;
-  display: flex;
+  display: block;
   justify-content: center;
   align-items: center;
   padding: 20px;
@@ -69,6 +69,7 @@ body {
   max-width: 900px;
   width: 100%;
   transition: all 0.3s ease;
+  margin: 156px auto 40px auto;
 }
 
 .header {
@@ -776,4 +777,26 @@ button:disabled {
     opacity: 1;
     transform: scale(1);
   }
+}
+.footer {
+  text-align: center;
+  margin-top: 20px;
+  font-size: 0.9rem;
+  color: var(--text-secondary);
+}
+.footer-link {
+  color: var(--text-primary);
+  text-decoration: none;
+  font-weight: 600;
+  opacity: 0.6;
+}
+.footer-link:hover {
+  text-decoration: underline;
+}
+ .credit {
+  margin-top: 10px;
+  text-align: center;
+  font-size: 0.9rem;
+  color: #444;
+  opacity: 0.8;
 }
